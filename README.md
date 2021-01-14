@@ -49,7 +49,7 @@
 - [Pug](https://pugjs.org/api/getting-started.html)
 - [Sass](https://sass-lang.com/)
 - [Gulp](https://gulpjs.com/)
-- [Boilerplate Ramsua](https://github.com/rr69sport/plantilla-base)
+- [Boilerplate @rr69sport](https://github.com/rr69sport/plantilla-base)
 
 ## Features
 
