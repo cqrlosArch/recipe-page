@@ -69,10 +69,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/cqrlosArch/recipe-page
 
 # Install dependencies
-$ yarn install o npm install
+$ yarn install or npm install
 
 # Run the app
-$ yarn dev ó npm run dev
+$ yarn dev or npm run dev
 ```
 
 ## Acknowledgements
