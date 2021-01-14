@@ -1,0 +1,30 @@
+.footer {
+  &__text {
+    color: $source;
+    font-style: italic;
+    font-size: 12px;
+    @include md {
+      font-size: 16px;
+    }
+  }
+  &__cite {
+    margin-top: 0.4rem;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    @include md {
+      display: inline;
+    }
+  }
+
+  &__author {
+    margin-top: 6rem;
+    text-align: center;
+    color: $footer;
+    font-weight: 400;
+    font-size: 14px;
+    @include md {
+      margin-top: 8rem;
+    }
+  }
+}

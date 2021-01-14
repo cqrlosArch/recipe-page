@@ -1,0 +1,9 @@
+mixin ingredient(text,span,rest)
+  div.ingredient
+    input(type="checkbox").ingredient__input
+    label.ingredient__label
+    p.ingredient__text=text
+      if span
+          span(class!=attributes.class).ingredient__span= span
+      else 
+      = rest

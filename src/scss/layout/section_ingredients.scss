@@ -1,0 +1,92 @@
+.section-ingredients {
+  &__title {
+    font-family: $playfair;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    @include md {
+      font-size: 24px;
+    }
+  }
+  .article {
+    @include md {
+      max-width: 554px;
+    }
+    &__title {
+      font-family: $playfair;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 1rem;
+      @include md {
+        font-size: 18px;
+      }
+    }
+    .ingredients-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .ingredient {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 0.7rem;
+        position: relative;
+        &__input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          left: 0;
+          top: 0;
+          min-width: 22px;
+          height: 24px;
+          z-index: 10;
+
+          &:checked ~ .ingredient__label {
+            display: block;
+            border: none;
+            background: url('../assets/check.svg') no-repeat $colorIcon;
+            background-size: 100%;
+           
+          }
+        }
+        &__label {
+          position: absolute;
+          left: 0;
+          top: 0px;
+          min-width: 21px;
+          height: 21px;
+          outline: none;
+          border: none;
+          border: 1px solid #828282;
+          border-radius: 4px;
+          margin-top: 0.3rem;
+        }
+        &__text {
+          margin: 0;
+          font-family: $montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 25px;
+          margin-left: 2rem;
+          @include md {
+            font-size: 16px;
+          }
+        }
+        &__span {
+          color: $black;
+          font-weight: 700;
+        }
+        &__end {
+          font-style: italic;
+          color: $text;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

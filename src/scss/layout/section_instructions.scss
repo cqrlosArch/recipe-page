@@ -1,0 +1,53 @@
+.section-instructions {
+  @include md{
+    max-width: 540px;
+  }
+  &__title {
+    font-family: $playfair;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .list-instructions {
+    padding-left: 0;
+    position: relative;
+    list-style: none;
+    counter-reset: li;
+    .instruction {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 3rem;
+      counter-increment: li;
+      &::before {
+        content: counter(li);
+        position: absolute;
+        left: 0;
+        font-family: $playfair;
+        display: grid;
+        place-items: start center;
+        font-weight: bold;
+        font-size: 24px;
+        width: 36px;
+        height: 36px;
+        color: $bg;
+        background-color: $colorIcon;
+        border-radius: 6px;
+      }
+
+      &__text {
+        line-height: 1.7rem;
+        margin-top: 0;
+        padding: 0.5rem;
+        padding-top: 0;
+        font-size: 16px;
+        text-align: left;
+      }
+      &__span {
+       color:$black;
+       font-weight: 700;
+      }
+    }
+  }
+}

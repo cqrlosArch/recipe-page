@@ -1,0 +1,6 @@
+mixin instruction(span,text)
+  li.instruction
+    p.instruction__text
+      if span
+        span.instruction__span= span
+      = text

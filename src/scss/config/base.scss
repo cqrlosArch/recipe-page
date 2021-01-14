@@ -1,0 +1,34 @@
+/*
+    En este archivo van todos los estilos de etiqueta.
+    Véalo como su normalize personalizado
+*/
+html {
+  font-size: 14px;
+  font-family: $montserrat;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: $bg;
+  width: 100%;
+  color: $text;
+  padding: 1rem;
+
+  @include md {
+    max-width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.colorIcon {
+  color: $colorIcon;
+}
+.colorGray {
+  color: $source;
+}
